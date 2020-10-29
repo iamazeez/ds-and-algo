@@ -7,8 +7,9 @@
 <body>
    
    <script>
-   
+   //My Solution of reversing Array
    var arrSam = [1,2,3];      
+   var names = ['Azeez','Abdul','Sidz'];       
        
    function reverseArray(arr){
        var newArr = [];
@@ -19,7 +20,32 @@
    }
        
    
-   var newArray = reverseArray(arrSam);       
+   var newArray = reverseArray(names);   
+       
+       
+    //Geeks For Geek Approch For this Solution
+    function rvereseArray(arr, start, 
+                       end)
+    {
+    while (start < end)
+    {
+        var temp = arr[start]; 
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    } 
+}    
+    
+    function printArray(arr, size)
+    {
+    for (var i = 0; i < size; i++){
+     console.log(arr[i]);
+    }
+    }        
+       
+       
+       
    </script>
     
 </body>
