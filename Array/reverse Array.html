@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+   
+   <script>
+   
+   var arrSam = [1,2,3];      
+       
+   function reverseArray(arr){
+       var newArr = [];
+       for(i=1;i<arr.length+1; i++){
+            newArr[i - 1] = arr[arr.length - i];
+       }
+       return newArr;
+   }
+       
+   
+   var newArray = reverseArray(arrSam);       
+   </script>
+    
+</body>
+</html>
